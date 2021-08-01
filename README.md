@@ -6,10 +6,16 @@ to the designated site, instead of the employee himself manually typing the repo
 
 
 
+
+
+
 ![רובוט](https://user-images.githubusercontent.com/50213140/127783487-7ca37f3b-b2c1-4e5e-b9fd-f086cac568ba.PNG)
 
 
 
 
-method - Object Oriented Programming
+
+
+
+method - Object Oriented Programming.
 Libraries - Selenium ,Tkinter , Pandas
