@@ -299,7 +299,6 @@ class TimeSheet:
             self.sheet.delete_rows(2 ,self.sheet.max_row+1)
             self.wb_obj.save(self.excel_path)
 
-            # return to main function
 
 
 
