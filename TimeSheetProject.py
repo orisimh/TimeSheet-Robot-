@@ -296,23 +296,6 @@ class TimeSheet:
         print(toclean)
         if(toclean == 1):
 
-            # # load excel file
-            # idx = str(self.excel_path).rfind('/')
-            #
-            # excel_name = str(self.excel_path)[-(len(self.excel_path) - idx - 1):]
-            # path_name = str(self.excel_path)[:-(len(self.excel_path) - idx - 1)]
-            #
-            # xlsx_file = Path(path_name, excel_name)
-            # # print(xlsx_file)
-            # wb_obj = openpyxl.load_workbook(xlsx_file)
-            #
-            # # Read the active sheet:
-            # # self.sheet = wb_obj.active
-            # self.sheet = wb_obj.get_sheet_by_name("גיליון1")
-            # print(self.sheet)
-            # # for i, row in enumerate(self.sheet.iter_rows(values_only=True)):
-            # # while (self.sheet.max_row > 1):
-            #     # this method removes the row 2
             self.sheet.delete_rows(2 ,self.sheet.max_row+1)
             self.wb_obj.save(self.excel_path)
 
