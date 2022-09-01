@@ -5,6 +5,7 @@ Created on Fri Jul 31 16:59:30 2020
 @author: Ori Simcha
 """
 
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import openpyxl
 from pathlib import Path
@@ -116,8 +117,6 @@ class TimeSheet:
 
             else:
 
-             # for cell in row:
-
                 if row[0] == None:
                         continue
 
@@ -125,7 +124,6 @@ class TimeSheet:
                 self.driver.find_element_by_id("ContentPlaceHolder1_AddReport1_DateTextBox").click()
                 time.sleep(2)
                 # self.driver.find_element_by_id("ContentPlaceHolder1_AddReport1_DateTextBox").clear()
-                # time.sleep(2)
 
                 
                 dateformat = "%Y-%m-%d" #"%Y/%m/d"
@@ -147,11 +145,7 @@ class TimeSheet:
                     messagebox.showerror(title='TimeSheet Robot',message='the month is not the current month')
 
 
-                # insert '03:25'
                 time.sleep(2)
-                #h , m = row[3].split(':')
-                # print(row[3].minute[0])
-
 
                 timeformat = "%H:%M:%S"
                 try:
@@ -240,8 +234,6 @@ class TimeSheet:
                     # self.driver.quit()
                     return
 
-
-                from selenium.webdriver.common.action_chains import ActionChains
 
 
                 try:
